@@ -131,9 +131,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-      label: "LinkedIn"
-      icon : "fa fa-linkedin-square"
-      url : "https://www.linkedin.com/in/shafayet-ali-38356b107/"
+      #label: "LinkedIn"
+      #icon : "fa fa-linkedin-square"
+      #url : "https://www.linkedin.com/in/shafayet-ali-38356b107/"
 
 # Site Footer
 footer:
