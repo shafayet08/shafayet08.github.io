@@ -19,8 +19,8 @@ locale                   : "en-US"
 title                    : "Shafayet Ali"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Shafayet Ali"
-description              : "Data science Portfolio"
+name                     : "Your Name"
+description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -107,10 +107,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Shafayet Ali"
+  name             : "Your Name"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data science Portfolio"
-  location         : "Sydney, Australia"
+  bio              : "I am an **amazing** person."
+  location         : "Somewhere"
   email            :
   links:
     - label: "Email"
@@ -127,13 +127,10 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/shafayet08/shafayet08.github.io"
+      # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-      #label: "LinkedIn"
-      #icon : "fa fa-linkedin-square"
-      #url : "https://www.linkedin.com/in/shafayet-ali-38356b107/"
 
 # Site Footer
 footer:
@@ -297,10 +294,3 @@ defaults:
       comments: # true
       share: true
       related: true
-# _pages
- - scope:
-    path : ""
-    type : pages
-    values :
-      layout: single
-      author_profile : true
