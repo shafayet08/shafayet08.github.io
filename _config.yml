@@ -107,7 +107,7 @@ analytics:
 
 author:
   name             : "Shafayet Ali"
-  avatar           :  "/images/Building.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           :  "/_images/Building.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Science Portfolio"
   location         : "Sydney,Australia"
   email            : "alishafayet8@gmail.com"
