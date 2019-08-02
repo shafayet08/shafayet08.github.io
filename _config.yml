@@ -119,7 +119,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/shafayet08"
+  github           : "shafayet08"
   gitlab           :
   google_plus      :
   keybase          :
@@ -278,3 +278,10 @@ defaults:
       comments: # true
       share: true
       related: true
+       # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
