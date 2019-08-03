@@ -1,6 +1,6 @@
--------
- title: "About"
- permalink: /about/
- header:
-   image: "/images/skyline.jpg"
---------
+---
+title: "About"
+permalink: /about/
+header:
+ image: "/images/skyline.jpg"
+---
