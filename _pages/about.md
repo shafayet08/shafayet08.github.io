@@ -2,5 +2,5 @@
  title: "About"
  permalink: /about/
  header:
-   overlay_color: "#333"
-  --------
+   image: "/images/skyline.jpg"
+--------
