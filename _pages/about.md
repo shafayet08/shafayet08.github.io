@@ -5,6 +5,6 @@ header:
  overlay_color: "#333"
 ---
 
-I am a professional Electronics and Electrical Engineer and an aspiring
-Data Analyst. In this portfolio I will be demonstration my knowledge so far in
+I am a professional Electronics and Electrical Engineer and an aspiring Data
+Analyst. In this portfolio I will be demonstrating my knowledge so far in
 exploratory data analytics , visualization and machine learning.
