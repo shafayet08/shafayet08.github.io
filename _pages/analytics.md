@@ -1,11 +1,12 @@
 ---
   layout: archive
-  permalink: / Data-Analytics/
+  permalink: /Data-Analytics/
   title: "Data Analytics Posts"
   author_profile: true
   header:
     overlay_color: "#333"
 ---
+
 {% include base_path %}
 {% include group-by-array collection=site.posts field="tags" %}
 
