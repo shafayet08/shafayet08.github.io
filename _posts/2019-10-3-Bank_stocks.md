@@ -68,3 +68,21 @@ Now I will be joining all the bank's dataframe together but before that I will m
     bank_stock.head()
 ```
 <img src="{{ site.url }}{{ site.baseurl }}/images/Bank/columnnames.JPG" alt=" GS data info">
+
+Now I want to explore and look into the data. I want to know the maximum closing of the stock for the last 10 years.
+
+```python
+     # Maximum opening value
+     bank_stock.xs(key = 'Close', axis = 1, level = 'Stock info').max()
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/max_closing_price.JPG" alt=" GS data info">
+
+Now I would like to see the percentage return for each of the bank stocks. For that I will first create a new database and put the return values in it.
+
+```python
+
+     for tick in tickers:
+          returns[tick]= bank_stock[tick]['Close'].pct_change()
+     returns.head()
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/Pctchange_returns.JPG" alt=" GS data info">
