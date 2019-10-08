@@ -126,3 +126,52 @@ For the year 2018,
     returns.ix['2018-01-01':'2018-12-31'].std()
 ```
 <img src="{{ site.url }}{{ site.baseurl }}/images/Bank/2018returnstd.JPG" alt=" Returns trend">
+
+For the year 2018 all of the 5 banks were pretty much had the same low risk stocks.
+
+A distribution plot of the percentage Return for Morgan Stanley for the year.
+2018:
+```python
+    sns.distplot(returns.ix['2018-01-01':'2018-12-31']['MS'],color='red')
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/Morganstanely_return2018.JPG" alt=" Returns trend">
+
+2009:
+```python
+    sns.distplot(returns.ix['2009-01-01':'2009-12-31']['MS'],color='red',bins =50)
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/Morgan2009return.JPG" alt=" Returns trend">
+
+Stock price trend of all 6 banks for the last decade.
+
+```python
+    for tick in tickers:
+        bank_stock[tick]['Close'].plot(label = tick, figsize=(12,10))
+    plt.legend()
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/Stock_prices.JPG" alt=" Returns trend">
+
+30 day closing average for the Goldman Sachs for the year 2018.
+
+```python
+# Goldman Sachs
+    plt.figure(figsize=(12,6))
+    GS['Close'].ix['2018-01-01':'2018-12-31'].rolling(window=30).mean().plot(label='30 Day Avg')
+    GS['Close'].ix['2018-01-01':'2018-12-31'].plot(label='GS CLOSE')
+    plt.legend()
+
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/GSmovingA2018.JPG" alt=" Returns trend">
+
+
+Lastly the correlation between the stocks of the banks.
+ 
+```python
+     bank_stock.xs(key='Close',axis=1,level = 'Stock info').corr()
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/correlation.JPG" alt=" Returns trend">
+
+```python
+     sns.clustermap(bank_stock.xs(key='Close',axis=1,level = 'Stock info').corr(),annot = True)
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/corrclustermap.JPG" alt=" clustermap map">
