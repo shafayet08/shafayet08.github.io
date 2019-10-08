@@ -20,3 +20,16 @@ Firstly I imported all the libraries I'll be needing for this project.
       import matplotlib.pyplot as plt
       %matplotlib inline
 ```
+As I would like to get the stock data from Yahoo Finance I would like to set the time period of the data I would like to gather using the datetime function.
+
+```Python
+    start = datetime.datetime(2008, 1, 1)
+    end = datetime.datetime(2019, 1, 1)
+```
+Now I will collect the sock price data of the following 6 banks:
+Bank of America
+Citi group
+Goldman Sachs
+JPMorgan Chase
+Morgan Stanley
+Wells Fargo
