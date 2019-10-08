@@ -58,3 +58,13 @@ Each of the bank's dataframe contains the following information.
      GS.head()
 ```
  <img src="{{ site.url }}{{ site.baseurl }}/images/Bank/Capture.JPG" alt=" GS data info">
+
+Now I will be joining all the bank's dataframe together but before that I will make a list with the symbols of the banks and call it tickers.
+
+```python
+    tickers= ['BAC','C','GS','JPM','MS','WFC']
+    bank_stock=pd.concat([BAC,C,GS,JPM,MS,WFC],axis=1,keys=tickers)
+    bank_stock.columns.names=['Banks Names','Stock info']
+    bank_stock.head()
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/columnnames.JPG" alt=" GS data info">
