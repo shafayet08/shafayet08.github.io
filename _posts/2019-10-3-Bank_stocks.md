@@ -75,14 +75,54 @@ Now I want to explore and look into the data. I want to know the maximum closing
      # Maximum opening value
      bank_stock.xs(key = 'Close', axis = 1, level = 'Stock info').max()
 ```
-<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/max_closing_price.JPG" alt=" GS data info">
+<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/max_closing_price.JPG" alt=" Closing prices">
 
 Now I would like to see the percentage return for each of the bank stocks. For that I will first create a new database and put the return values in it.
 
 ```python
-
      for tick in tickers:
           returns[tick]= bank_stock[tick]['Close'].pct_change()
      returns.head()
 ```
-<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/Pctchange_returns.JPG" alt=" GS data info">
+<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/Pctchange_returns.JPG" alt=" Returns Dataframe">
+
+ A line chart to show the trend in Return for the banks stocks over the last decade.
+
+```python
+     plt.figure(figsize=(10,10))
+     for tick in returns:
+         returns[tick].plot()
+     plt.legend()
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/returns_graph.JPG" alt=" Returns trend">
+
+The dates at which the percentage return was the highest and the lowest.
+
+Minimum Returns
+```python
+     returns.idxmin()
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/min_returndate.JPG" alt=" Returns trend">
+
+Maximum Returns
+```python
+     returns.idxmax()
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/max_returndate.JPG" alt=" Returns trend">
+
+
+Now I would like to know how risky the stocks are. For that I  will have to look at the standard deviation of the returns of the stock prices.
+
+```python
+     returns.std()
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/standarddeviation.JPG" alt=" Returns trend">
+
+It can be seen that out of all the banks, Bank of America had the riskiest stocks.
+
+For the year 2018,
+
+```python
+    returns.ix['2018-01-01':'2018-12-31'].std()
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/Bank/2018returnstd.JPG" alt=" Returns trend">
