@@ -57,4 +57,4 @@ Each of the bank's dataframe contains the following information.
 ```python
      GS.head()
 ```
- <img src="{{ site.url }}{{ site.baseurl }}/images/Bank/Capture.jpg" alt=" GS data info">
+ <img src="{{ site.url }}{{ site.baseurl }}/images/Bank/Capture.JPG" alt=" GS data info">
