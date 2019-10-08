@@ -22,7 +22,7 @@ Firstly I imported all the libraries I'll be needing for this project.
 ```
 As I would like to get the stock data from Yahoo Finance I set the time period of the data I would like to gather using the datetime function.
 
-```Python
+```python
      start = datetime.datetime(2008, 1, 1)
      end = datetime.datetime(2019, 1, 1)
 ```
@@ -34,7 +34,7 @@ JPMorgan Chase
 Morgan Stanley
 Wells Fargo
 
-```Python
+```python
      # Bank of America
      BAC = data.DataReader("BAC", 'yahoo', start, end)
 
@@ -54,7 +54,7 @@ Wells Fargo
      WFC = data.DataReader("WFC", 'yahoo', start, end)
 ```
 Each of the bank's dataframe contains the following information.
-```Python
+```python
      GS.head()
 ```
  <img src="{{ site.url }}{{ site.baseurl }}/images/Bank/Capture.jpg" alt=" GS data info">
