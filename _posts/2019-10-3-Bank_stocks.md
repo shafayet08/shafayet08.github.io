@@ -23,8 +23,8 @@ Firstly I imported all the libraries I'll be needing for this project.
 As I would like to get the stock data from Yahoo Finance I set the time period of the data I would like to gather using the datetime function.
 
 ```Python
-    start = datetime.datetime(2008, 1, 1)
-    end = datetime.datetime(2019, 1, 1)
+     start = datetime.datetime(2008, 1, 1)
+     end = datetime.datetime(2019, 1, 1)
 ```
 Now I will collect the sock price data of the following 6 banks:
 Bank of America
@@ -35,26 +35,26 @@ Morgan Stanley
 Wells Fargo
 
 ```Python
-# Bank of America
-BAC = data.DataReader("BAC", 'yahoo', start, end)
+     # Bank of America
+     BAC = data.DataReader("BAC", 'yahoo', start, end)
 
-# CitiGroup
-C = data.DataReader("C", 'yahoo', start, end)
+     # CitiGroup
+     C = data.DataReader("C", 'yahoo', start, end)
 
-# Goldman Sachs
-GS = data.DataReader("GS", 'yahoo', start, end)
+     # Goldman Sachs
+     GS = data.DataReader("GS", 'yahoo', start, end)
 
-# JPMorgan Chase
-JPM = data.DataReader("JPM", 'yahoo', start, end)
+     # JPMorgan Chase
+     JPM = data.DataReader("JPM", 'yahoo', start, end)
 
-# Morgan Stanley
-MS = data.DataReader("MS", 'yahoo', start, end)
-x\
-# Wells Fargo
-WFC = data.DataReader("WFC", 'yahoo', start, end)
+     # Morgan Stanley
+     MS = data.DataReader("MS", 'yahoo', start, end)
+
+     # Wells Fargo
+     WFC = data.DataReader("WFC", 'yahoo', start, end)
 ```
 Each of the bank's dataframe contains the following information.
 ```Python
-   GS.head()
+     GS.head()
 ```
- <img src="{{ site.url }}{{ site.baseurl }}/images/Bank Stock/Capture.jpg" alt=" GS data info">
+ <img src="{{ site.url }}{{ site.baseurl }}/images/Bank/Capture.jpg" alt=" GS data info">
