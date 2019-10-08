@@ -3,7 +3,7 @@ title: "Data Analytics Project: Bank Stocks"
 date : 2019-10-3
 tags: [Data Analytics]
 header:
- image: "/images/Bank Stock/wallstreet.jpg"
+ image: "/images/Bank/wallstreet.jpg"
  excerpt: "Data Analytics, Stock prices"
 ---
 In this new project I wanted to collect data from Yahoo Finance and analyze them. I collected the stock prices of 6 of the biggest banks in the world for the past 11 years and tried to analyze their stock price trends.
@@ -165,7 +165,7 @@ Stock price trend of all 6 banks for the last decade.
 
 
 Lastly the correlation between the stocks of the banks.
- 
+
 ```python
      bank_stock.xs(key='Close',axis=1,level = 'Stock info').corr()
 ```
